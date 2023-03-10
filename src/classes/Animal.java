@@ -50,7 +50,6 @@ public abstract class Animal implements AnimalInterface{
         String answer = scanner.nextLine();
         if(answer == "y") {
             System.out.println(animalName + " has been fed.");
-
         } else if(answer == "n") {
             System.out.println(animalName + " is still hungry :( ");
         }
