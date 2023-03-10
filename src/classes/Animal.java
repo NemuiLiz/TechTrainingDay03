@@ -10,7 +10,7 @@ public class Animal {
     public int numberOfEyes;
     public String diet;
     public String habitat;
-    public boolean isHungry;
+    public boolean isHungry = false;
 
     //Constructor
     public Animal(String animalName, int numberOfLegs, int numberOfEyes, String diet, String habitat) {
@@ -31,7 +31,10 @@ public class Animal {
 
     //classes.Animal hungry, feed animal
     public void feedAnimal() {
-
+        if(isHungry == true) {
+            isHungry = false;
+            System.out.println("Animal has been fed.");
+        }
     }
 
 
