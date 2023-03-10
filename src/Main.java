@@ -1,6 +1,7 @@
 import classes.Animal;
 import classes.Groceries;
 import classes.Vehicle;
+import classes.Cat;
 
 public class Main {
 
@@ -9,6 +10,9 @@ public class Main {
         Animal animal = new Animal( "Dog",4, 2,"Omnivore","Land");
         Groceries groceries = new Groceries();
         Vehicle vehicle = new Vehicle();
+
+        Cat cat = new Cat();
+        cat.animalSound();
 
     }
 }
