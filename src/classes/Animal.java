@@ -1,6 +1,7 @@
 package classes;
 
 import java.util.Scanner;
+//Change for GIT!
 
 //Object
 public abstract class Animal implements AnimalInterface{
