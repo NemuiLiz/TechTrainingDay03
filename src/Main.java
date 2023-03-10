@@ -8,6 +8,7 @@ public class Main {
         Groceries groceries = new Groceries();
         Vehicle vehicle = new Vehicle();
 
+        // Rico was here
 
     }
 }
