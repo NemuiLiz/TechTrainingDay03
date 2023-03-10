@@ -34,33 +34,28 @@ public class Main {
 
         Cow cow = new Cow();
         cow.setAnimalName("Moo-lan");
-        cow.getAnimalName();
         cow.setRace("burger cow");
-        cow.getRace();
         cow.setHabitat("grill");
-        cow.getHabitat();
-        cow.animalSound();
+        cow.setAnimalSound("Moo!");
+        System.out.println(cow);
 
         System.out.println("------------------------------------");
 
         Bird bird = new Bird();
         bird.setAnimalName("Hansi");
-        bird.getAnimalName();
         bird.setRace("Budgie");
-        bird.getRace();
         bird.setHabitat("air");
-        bird.getHabitat();
-        bird.animalSound();
+        bird.setAnimalSound("Chirp!");
+        System.out.println(bird);
 
         System.out.println("------------------------------------");
 
         Fish fish = new Fish();
         fish.setAnimalName("Dory");
-        fish.getAnimalName();
         fish.setRace("Blue Hippo Tang");
-        fish.getRace();
         fish.setHabitat("water");
-        fish.getHabitat();
-        fish.animalSound();
+        fish.setAnimalSound("Blubb!");
+        System.out.println(fish);
+        fish.feedHungryAnimal();
     }
 }

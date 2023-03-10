@@ -13,7 +13,6 @@ public class Bird extends Animal {
     }
 
     public String getRace() {
-        System.out.println(animalName + " is a " + race);
         return race;
     }
 
@@ -22,7 +21,6 @@ public class Bird extends Animal {
     }
 
     public String getHabitat() {
-        System.out.println(animalName + "'s habitat is on " + habitat);
         return habitat;
     }
 
@@ -30,8 +28,4 @@ public class Bird extends Animal {
         this.habitat = habitat;
     }
 
-    @Override
-    public void animalSound() {
-        System.out.println("Chirp!");
-    }
 }

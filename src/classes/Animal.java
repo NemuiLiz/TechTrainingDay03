@@ -44,7 +44,42 @@ public abstract class Animal implements AnimalInterface{
             isHungry = !isHungry;
     }
 
+    public void feedHungryAnimal() {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println(animalName + " is hungry! Do you want to feed it? y/n");
+        String answer = scanner.nextLine();
+        if(answer == "y") {
+            System.out.println(animalName + " has been fed.");
+
+        } else if(answer == "n") {
+            System.out.println(animalName + " is still hungry :( ");
+        }
+    }
+
+    public String isHungryText() {
+        if(isHungry) {
+            return "hungry!!!";
+        } else {
+            return "not hungry.";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return
+                "This is " + animalName + " which is a " + race + ", lives on/in " + habitat + " and is " + isHungryText() + " " + getAnimalSound();
+    }
+
     //getter and setter
+
+    public String getAnimalSound() {
+        return animalSound;
+    }
+
+    public void setAnimalSound(String animalSound) {
+        this.animalSound = animalSound;
+    }
+
     public String getAnimalName() {
         return animalName;
     }
@@ -89,6 +124,8 @@ public abstract class Animal implements AnimalInterface{
         return isHungry;
     }
 
+
+
     public void setHungry(boolean hungry) {
         isHungry = hungry;
     }
@@ -100,4 +137,6 @@ public abstract class Animal implements AnimalInterface{
     public void setRace(String race) {
         this.race = race;
     }
+
+
 }

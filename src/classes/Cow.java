@@ -9,14 +9,9 @@ public class Cow extends Animal {
 
     @Override
     public String getAnimalName() {
-        System.out.println("This is " + animalName);
         return animalName;
     }
 
-    @Override
-    public void animalSound() {
-        System.out.println("Moo!");
-    }
 
     @Override
     public void setRace(String race) {
@@ -25,7 +20,6 @@ public class Cow extends Animal {
 
     @Override
     public String getRace() {
-        System.out.println(animalName + " is a " + race);
         return race;
     }
 
@@ -46,7 +40,6 @@ public class Cow extends Animal {
 
     @Override
     public String getHabitat() {
-        System.out.println(animalName + " is a " + habitat + " animal");
         return habitat;
     }
 

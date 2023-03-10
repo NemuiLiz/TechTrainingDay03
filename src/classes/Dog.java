@@ -6,7 +6,6 @@ public class Dog extends Animal{
 
 
     public String getAnimalName() {
-        System.out.println("This is " + animalName);
         return animalName;
     }
 
@@ -15,7 +14,6 @@ public class Dog extends Animal{
     }
 
     public String getRace() {
-        System.out.println(animalName + " is a " + race);
         return race;
     }
 
@@ -24,17 +22,11 @@ public class Dog extends Animal{
     }
 
     public String getHabitat() {
-        System.out.println(animalName + "'s habitat is on " + habitat);
         return habitat;
     }
 
     public void setHabitat(String habitat) {
         this.habitat = habitat;
-    }
-
-    @Override
-    public void animalSound() {
-        System.out.println("Woof!");
     }
 
 }
