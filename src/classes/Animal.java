@@ -1,13 +1,16 @@
+package classes;
+
 import java.util.Scanner;
 
 //Object
 public class Animal {
     //Fields
-    String animalName;
-    int numberOfLegs;
-    int numberOfEyes;
-    String diet;
-    String habitat;
+    public String animalName;
+    public int numberOfLegs;
+    public int numberOfEyes;
+    public String diet;
+    public String habitat;
+    public boolean isHungry;
 
     //Constructor
     public Animal(String animalName, int numberOfLegs, int numberOfEyes, String diet, String habitat) {
@@ -24,6 +27,11 @@ public class Animal {
         System.out.println("Please enter an animal Name : ");
         animalName = scanner.nextLine();
         return animalName;
+    }
+
+    //classes.Animal hungry, feed animal
+    public void feedAnimal() {
+
     }
 
 

@@ -1,3 +1,5 @@
+package classes;
+
 //Object
 public class Vehicle {
     //Fields
