@@ -1,6 +1,6 @@
 package classes;
 
-public class Cat extends Animal{
+public class Fish extends Animal {
 
     @Override
     public void setAnimalName(String animalName) {
@@ -15,7 +15,7 @@ public class Cat extends Animal{
 
     @Override
     public void animalSound() {
-        System.out.println("Meow!");
+        System.out.println("Blubb!");
     }
 
     @Override

@@ -1,8 +1,8 @@
 package classes;
 
 public interface AnimalInterface {
-    public void animalSound();
-    public void isHungry();
-    public void feedAnimal();
-    public void addRace();
+    void animalSound();
+    boolean isHungry();
+    void feedAnimal();
+    void addRace();
 }
