@@ -31,12 +31,15 @@ public class Animal {
 
     //classes.Animal hungry, feed animal
     public void feedAnimal() {
-        if(isHungry == true) {
+        if(isHungry) {
             isHungry = false;
             System.out.println("Animal has been fed.");
         }
     }
 
+    public void changeHungryState() {
+        isHungry = !isHungry;
+    }
 
 
 }
